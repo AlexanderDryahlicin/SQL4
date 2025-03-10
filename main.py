@@ -110,7 +110,7 @@ def find_client(conn, first_name=None, last_name=None, email=None, phone=None):
         return []
 
 
-with psycopg2.connect(database="clients", user="postgres", password="Haligali1982@") as conn:
+with psycopg2.connect(database="clients", user="postgres", password="password") as conn:
     # Удаляем таблицы (если они существуют)
     drop_tables(conn)
     print("Таблицы удалены")
